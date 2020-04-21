@@ -21,14 +21,19 @@ var risultato2 = giocatore2_dado1 + giocatore2_dado2;
 console.log('La somma dei dadi del tuo avversario è ' + risultato2);
 document.getElementById('giocatore2').innerHTML='La somma dei dadi del tuo avversario è ' + risultato2;
 // il più alto vince
+
+var messaggio = ''
 if (risultato1 > risultato2) {
-    console.log('Hai vinto!');
-    document.getElementById('haivinto').innerHTML='Hai vinto!';
+    messaggio = 'Hai vinto!';
+    console.log(messaggio);
+
 } else if(risultato1 == risultato2) {
-    console.log('Pareggio! Ritenta');
-    document.getElementById('pareggio').innerHTML='Pareggio! Ritenta';
+    messaggio = 'Pareggio! Ritenta';
+    console.log(messaggio);
 
 } else {
-    console.log('Hai perso!');
-    document.getElementById('haiperso').innerHTML='Hai perso!';
+    messaggio = 'Pareggio! Ritenta';
+    console.log(messaggio);
 }
+
+document.getElementById('punteggio').innerHTML = messaggio;
