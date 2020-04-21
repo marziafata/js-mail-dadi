@@ -32,7 +32,7 @@ if (risultato1 > risultato2) {
     console.log(messaggio);
 
 } else {
-    messaggio = 'Pareggio! Ritenta';
+    messaggio = 'Hai Perso!';
     console.log(messaggio);
 }
 
